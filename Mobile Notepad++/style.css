@@ -1,0 +1,13 @@
+body {
+
+<!-- This page is for all of the different styles that I had envisioned for this project -->
+li a{ <!-- This anchors the lines of style code and what will be contained within -->
+  display: block;
+  width: 100px; height 20px;
+  border: 1.5px yellow;
+  text-align: center;
+  line-height: 25px;
+  background-color: yellow;
+  color: red;
+}
+

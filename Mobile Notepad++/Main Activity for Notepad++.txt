@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="pageone">//Tells the role of the page
+  <div data-role="header">//Tells the role of the header 
+    <h1>Welcome to SoundJam! Created by Jack Morris</h1>//Title of the project and the creator
+  </div>
+
+  <div data-role="main" class="ui-content"> //Content for the page
+   
+    <a href="#pagetwo">Welcome! Click to begin!</a> //Creates a link to the next page
+  </div>
+
+  <div data-role="footer">
+    <h1>SoundJam</h1>
+  </div>
+</div> 
+
+<div data-role="page" id="pagetwo">
+  <div data-role="header">
+    <h1>Please Choose A Genre</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+  <a href="#pagethree">Classic Rock</a>
+  </div>
+  
+<div data-role="main" class="ui-content">
+   <a href="#pagetwo">Heavy Metal</a>
+  
+ 
+
+  <div data-role="main" class="ui-content">
+   <a href="#pagetwo">Blues</a>
+
+
+
+  <div data-role="main" class="ui-content">
+   <a href="#pagetwo">Classical</a>
+  
+ 
+
+  <div data-role="main" class="ui-content">
+   <a href="#pagetwo">Classic Country</a>
+  </div>
+ </div>
+  
+  <div data-role="footer">
+    <h1>SoundJam</h1>
+  </div>
+</div>
+ 
+</body>
+</html>
+<!--<div data-role="panel" id="genrepanel">
+    <div ui-panel-inner>
+    <div data-animate="false">                         //All of this code was for potentially creating a group of panels
+	<div data-dismissible="false">
+	<div data-position-fixed="true">
+	<div data-display="overlay">
+	<a href="#genrepanel" data-rel="close">Classic Rock</a> -->
+<!-- /panel -->
+
+<!-- header -->
+<!-- content -->
+<!-- footer -->
+
+<!-- page -->
+ 
+ 
+
+
+

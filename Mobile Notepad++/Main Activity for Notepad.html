@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- A tag used for telling html what language I am using -->
+<head>
+<meta name="Initial code taken from Session 5. Edits made by Jack Morris" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" href="style.css"> <!--This is to create a collection of different styles for the app's separate pages -->
+<style>
+ <!--{
+    margin: 0px;//Shows the size of the pixels in the margin
+    padding: 0px;//Shows the pixel size in the label's padding
+ 
+ body {
+      font - family: Times New Roman;//Font of the text
+	  background-color: blue;//Colour of the background
+	  padding 50px;//Pixel Size of the padding in the background
+      }
+ 
+ h1 {
+     text-align: center;//Shows the alignment of the text on the screen
+	 border-bottom: 2px; //Shows the pixel size of the border along the bottom of the page
+	 margin-bottom: 30px; //Shows the pixel size of the margin along the botto of the webpage
+	}
+ 
+ }
+</style>
+</head>
+<body> -->
+ 
+
+<div data-role="page" id="pageone"> <!--Tells the role of the page -->
+  <div data-role="header"> <!--Tells the role of the header -->
+    <h1>Welcome to SoundJam! Created by Jack Morris</h1> <!--Title of the project and the creator -->
+  </div>
+ 
+  
+  <div data-role="main" class="ui-content"> <!--Content for the page -->
+  <!--<button><a href="#pagetwo">Welcome! Choose A Genre Below To Begin!</button> <!--Creates a link to the next page -->
+  <li><a href="#pagetwo">Choose A Genre!</a> <!--List item with a hyperlink to take the user to the second page -->
+  </div>
+
+  <div data-role="footer">
+    <h1>SoundJam</h1>
+  </div>
+</div> 
+
+<div data-role="page" id="pagetwo">
+  <div data-role="header">
+    <h1>Please Choose A Genre</h1>
+  </div>
+
+<!--<div data-role="pagetwo">
+  <div data-role="panel" id="genrepanel">
+    <div ui-panel-inner>
+    <div data-animate="false">                         <!--All of this code was for potentially creating a group of panels, which would link the genres to the questions-->
+	<!--<div data-dismissible="false">
+	<div data-position-fixed="true">
+	<div data-display="overlay">
+	<a href="#genrepanel" data-rel="close">Classic Rock</a> -->
+	
+ <div data-role="main" class="ui-content">
+   <li><a href="#pagethree">Classic Rock</a>
+    </div>
+  
+<div data-role="main" class="ui-content">
+   <li><a href="#pagenine">Heavy Metal</a>
+    </div>
+
+<div data-role="main" class="ui-content">
+   <li><a href="#pagefourteen">Blues</a>
+    </div>
+
+
+  <div data-role="main" class="ui-content">
+   <li><a href="#pageninteen">Classical</a>
+   </div>
+ 
+
+<div data-role="main" class="ui-content">
+   <li><a href="#pagetwentyfour">Classic Country</a>
+  </div>
+ 
+  
+  <div data-role="footer"
+    <li><a href="#pageone">Main Menu</a>
+  </div>
+</div>
+ 
+</head>	
+<body>
+
+<div data-role="page" id="pagethree">
+  <div data-role="header">
+    <h1>Classic Rock</h1>
+  </div>
+  
+	<div data-role="main" class="ui-content"> 
+  <li><a href="#pagefour">Your Question Is...</a> <!--href="#pagefour">Your Question Is...</a> Had another question with separate answers <!--List item with a hyperlink to take the user to the fourth page. Would have liked to have been able to randomise the questions  -->
+  </div>
+  
+  
+   <div data-role="footer"
+    <li><a href="#pageone">Main Menu</a>
+  </div>
+</div>
+ 
+  
+  </head>	
+<body>
+ 
+ <div data-role="page" id="pagefour">
+  <div data-role="header"> 
+	<h1>Which legendary singer-songwriter released the album "Harvest" in 1972?</h1>
+  </div>
+  
+  <div data-role="main" class="ui-content"> 
+  <li><a href="#pagefive">"Bruce Springsteen"</a>
+  </div>
+  
+  <div data-role="main" class="ui-content"> 
+  <li><a href="#pagesix">"Neil Young"</a>
+  </div>
+  
+   <div data-role="main" class="ui-content"> 
+  <li><a href="#pageseven">"Bob Dylan"</a>
+  </div>
+  
+   <div data-role="footer"
+    <li><a href="#pageone">Main Menu</a>
+  </div>
+</div>
+  </html>
+
+    </head>	
+<body>
+    
+<div data-role="main" id="pagefive">
+  <div data-role="header"> 
+	<h1>Sorry!</h1>
+  </div>
+
+   <div data-role="main" class="ui-content"> 
+    <li><a href="#pagetwo">Do you wish to choose another genre?</a>
+  </div>
+</div>
+  
+    <div data-role="main" id="pagesix">
+  <div data-role="header"> 
+	<h1>Congratulations!</h1>
+  </div>
+  
+   <div data-role="main" class="ui-content"> 
+    <li><a href="#pagetwo">Do you wish to choose another genre?</a>
+  </div>
+</div>
+
+<div data-role="main" id="pageseven">
+  <div data-role="header"> 
+	<h1>Sorry!</h1>
+  </div>
+ 
+ <div data-role="main" class="ui-content"> 
+    <li><a href="#pagetwo">Do you wish to choose another genre?</a>
+  </div>
+</div>
+
+</head>	
+<body>
+
+<div data-role="page" id="pagenine">
+  <div data-role="header">
+    <h1>Heavy Metal</h1>
+  </div>
+  
+	<div data-role="main" class="ui-content"> 
+  <li><a href="#pageten">Your Question Is...</a> <!--List item with a hyperlink to take the user to the tenth page. Would have liked to have been able to randomise the questions  -->
+  </div>
+  
+   <div data-role="footer"
+    <li><a href="#pageone">Main Menu</a>
+  </div>
+</div>
+		
+</body>
+</html>
+
+<div data-role="page" id="pageten">
+  <div data-role="header"> 
+	<h1>Which legendary musician was a former roadie for Jimi Hendrix?</h1>
+  </div>
+  
+  <div data-role="main" class="ui-content"> 
+  <li><a href="#pageeleven">"Jimmy Page"</a>
+  </div>
+  
+  <div data-role="main" class="ui-content"> 
+  <li><a href="#pagetwelve">"Ozzy Osbourne"</a>
+  </div>
+  
+  <div data-role="main" class="ui-content"> 
+  <li><a href="#pagethirteen">"Lemmy"</a>
+  </div>
+  </div>
+  
+  </html>
+</head>	
+<body>
+  
+  <div data-role="main" id="pageeleven">
+  <div data-role="header"> 
+	<h1>Sorry!</h1>
+  </div>
+ 
+ <div data-role="main" class="ui-content"> 
+    <li><a href="#pagetwo">Do you wish to choose another genre?</a>
+  </div>
+</div>
+
+<div data-role="main" id="pagetwelve">
+  <div data-role="header"> 
+	<h1>Sorry!</h1>
+  </div>
+ 
+ <div data-role="main" class="ui-content"> 
+    <li><a href="#pagetwo">Do you wish to choose another genre?</a>
+  </div>
+</div>
+
+<div data-role="main" id="pagethirteen">
+  <div data-role="header"> 
+	<h1>Congratulations!</h1>
+  </div>
+ 
+ <div data-role="main" class="ui-content"> 
+    <li><a href="#pagetwo">Do you wish to choose another genre?</a>
+  </div>
+</div>
+
+<div data-role="page" id="pagefourteen">
+  <div data-role="header">
+    <h1>Blues</h1>
+  </div>
+  
+	<div data-role="main" class="ui-content"> 
+  <li><a href="#pagefifteen">Your Question Is...</a> <!--href="#pagefour">Your Question Is...</a> Had another question with separate answers <!--List item with a hyperlink to take the user to the fourth page. Would have liked to have been able to randomise the questions  -->
+  </div>
+  
+   <div data-role="footer"
+    <li><a href="#pageone">Main Menu</a>
+  </div>
+</div>
+		<div data-role="page" id="pagefifteen">
+  <div data-role="header"> 
+	<h1>Which Blues musician released the song "Smokestack Lightning" in 1956?</h1>
+  </div>
+  
+  <div data-role="main" class="ui-content"> 
+  <li><a href="#pagesixteen">"Muddy Waters"</a>
+  </div>
+  
+  <div data-role="main" class="ui-content"> 
+  <li><a href="#pageseventeen">"Howlin' Wolf"</a>
+  </div>
+  
+   <div data-role="main" class="ui-content"> 
+  <li><a href="#pageeighteen">"Skip James"</a>
+  </div>
+  
+   <div data-role="footer"
+    <li><a href="#pageone">Main Menu</a>
+  </div>
+</div>
+  </html>
+<body>
+
+<div data-role="main" id="pagesixteen">
+  <div data-role="header"> 
+	<h1>Sorry!</h1>
+  </div>
+
+   <div data-role="main" class="ui-content"> 
+    <li><a href="#pagetwo">Do you wish to choose another genre?</a>
+  </div>
+</div>
+  
+    <div data-role="main" id="pageseventeen">
+  <div data-role="header"> 
+	<h1>Congratulations!</h1>
+  </div>
+  
+   <div data-role="main" class="ui-content"> 
+    <li><a href="#pagetwo">Do you wish to choose another genre?</a>
+  </div>
+</div>
+
+<div data-role="main" id="pageeighteen">
+  <div data-role="header"> 
+	<h1>Sorry!</h1>
+  </div>
+ 
+ <div data-role="main" class="ui-content"> 
+    <li><a href="#pagetwo">Do you wish to choose another genre?</a>
+  </div>
+</div>
+
+</head>	
+<body>
+
+<div data-role="page" id="pageninteen">
+  <div data-role="header">
+    <h1>Classical</h1>
+  </div>
+  
+	<div data-role="main" class="ui-content"> 
+  <li><a href="#pagetwenty">Your Question Is...</a> <!--href="#pagefour">Your Question Is...</a> Had another question with separate answers <!--List item with a hyperlink to take the user to the fourth page. Would have liked to have been able to randomise the questions  -->
+  </div>
+  
+   <div data-role="footer"
+    <li><a href="#pageone">Main Menu</a>
+  </div>
+</div>
+
+<div data-role="page" id="pagetwenty">
+  <div data-role="header"> 
+	<h1>Wolfgang Amadeus Mozart was born in which city?</h1>
+  </div>
+  
+  <div data-role="main" class="ui-content"> 
+  <li><a href="#pagetwentyone">"Vienna"</a>
+  </div>
+  
+  <div data-role="main" class="ui-content"> 
+  <li><a href="#pagetwentytwo">"Salzburg"</a>
+  </div>
+  
+   <div data-role="main" class="ui-content"> 
+  <li><a href="#pagetwentythree">"Graz"</a>
+  </div>
+  
+   <div data-role="footer"
+    <li><a href="#pageone">Main Menu</a>
+  </div>
+</div>
+  </html>
+<body>
+
+<div data-role="main" id="pagetwentyone">
+  <div data-role="header"> 
+	<h1>Sorry!</h1>
+  </div>
+
+   <div data-role="main" class="ui-content"> 
+    <li><a href="#pagetwo">Do you wish to choose another genre?</a>
+  </div>
+</div>
+  
+    <div data-role="main" id="pagetwentytwo">
+  <div data-role="header"> 
+	<h1>Congratulations!</h1>
+  </div>
+  
+   <div data-role="main" class="ui-content"> 
+    <li><a href="#pagetwo">Do you wish to choose another genre?</a>
+  </div>
+</div>
+
+<div data-role="main" id="pagetwentythree">
+  <div data-role="header"> 
+	<h1>Sorry!</h1>
+  </div>
+ 
+ <div data-role="main" class="ui-content"> 
+    <li><a href="#pagetwo">Do you wish to choose another genre?</a>
+  </div>
+</div>
+
+</head>	
+<body>
+
+<div data-role="page" id="pagetwentyfour">
+  <div data-role="header">
+    <h1>Classic Country</h1>
+  </div>
+  
+	<div data-role="main" class="ui-content"> 
+  <li><a href="#pagetwentyfive">Your Question Is...</a> <!--href="#pagefour">Your Question Is...</a> Had another question with separate answers <!--List item with a hyperlink to take the user to the fourth page. Would have liked to have been able to randomise the questions  -->
+  </div>
+  
+  
+   <div data-role="footer"
+    <li><a href="#pageone">Main Menu</a>
+  </div>
+</div>
+ 
+  
+  </head>	
+<body>
+
+<div data-role="page" id="pagetwentyfive">
+  <div data-role="header"> 
+	<h1>How many studio albums did Glen Campbell release?</h1>
+  </div>
+  
+  <div data-role="main" class="ui-content"> 
+  <li><a href="#pagetwentysix">"58"</a>
+  </div>
+  
+  <div data-role="main" class="ui-content"> 
+  <li><a href="#pagetwentyseven">"56"</a>
+  </div>
+  
+   <div data-role="main" class="ui-content"> 
+  <li><a href="#pagetwentyeight">"57"</a>
+  </div>
+  
+   <div data-role="footer"
+    <li><a href="#pageone">Main Menu</a>
+  </div>
+</div>
+  </html>
+<body>
+
+<div data-role="main" id="pagetwentysix">
+  <div data-role="header"> 
+	<h1>Sorry!</h1>
+  </div>
+
+   <div data-role="main" class="ui-content"> 
+    <li><a href="#pagetwo">Do you wish to choose another genre?</a>
+  </div>
+</div>
+  
+    <div data-role="main" id="pagetwentyseven">
+  <div data-role="header"> 
+	<h1>Sorry!</h1>
+  </div>
+  
+   <div data-role="main" class="ui-content"> 
+    <li><a href="#pagetwo">Do you wish to choose another genre?</a>
+  </div>
+</div>
+
+<div data-role="main" id="pagetwentyeight">
+  <div data-role="header"> 
+	<h1>Congratulations!</h1>
+  </div>
+ 
+ <div data-role="main" class="ui-content"> 
+    <li><a href="#pagetwo">Do you wish to choose another genre?</a>
+  </div>
+</div>
+
+</head>	
+<body>
+<!-- <div data-role="page" id="pagefour">
+  <div data-role="header"> 
+	<h1>What was the name of Pearl Jam's Second Album?</h1>
+  </div>
+ 
+ 	<div data-role="main" class="ui-content"> 
+  <li><a href="#pagefive">"Vs."</a> <!--List item with a hyperlink to take the user to the fifth page -->
+  <!--</div>
+ 
+ 	<div data-role="main" class="ui-content"> 
+  <li><a href="#pagesix">"Badmotorfinger"</a> <!--List item with a hyperlink to take the user to the fourth page -->
+  <!--</div>
+  
+  	<div data-role="main" class="ui-content"> 
+  <li><a href="#pageseven">"Dirt"</a> <!--List item with a hyperlink to take the user to the fourth page -->
+  <!--</div>
+
+   <div data-role="footer"
+    <li><a href="#pageone">Main Menu</a>
+  </div>
+</div>
+  </html>
+
+    </head>	
+<body>
+    
+<div data-role="page" id="pagefive">
+  <div data-role="header"> 
+	<h1>Congratulations!</h1>
+  </div>
+
+   <div data-role="main" class="ui-content"> 
+    <li><a href="#pagetwo">Do you wish to choose another genre?</a>
+  </div>
+</div
+  
+    <div data-role="page" id="pagesix">
+  <div data-role="header"> 
+	<h1>Sorry!</h1>
+  </div>
+  
+   <div data-role="main" class="ui-content"> 
+    <li><a href="#pagetwo">Do you wish to choose another genre?</a>
+  </div>
+
+<div data-role="page" id="pageseven">
+  <div data-role="header"> 
+	<h1>Sorry!</h1>
+  </div>
+ 
+ <div data-role="main" class="ui-content"> 
+    <li><a href="#pagetwo">Do you wish to choose another genre?</a>
+  </div>
+</div> 
+<!--<div data-role="pagetwo">
+  <div data-role="panel" id="genrepanel">
+    <div ui-panel-inner>
+    <div data-animate="false">                         <!--All of this code was for potentially creating a group of panels, which would link the genres to the questions-->
+	<!--<div data-dismissible="false">
+	<div data-position-fixed="true">
+	<div data-display="overlay">
+	<a href="#genrepanel" data-rel="close">Classic Rock</a> -->
+	
+<!-- /panel -->
+
+<!-- header -->
+<!-- content -->
+<!-- footer -->
+
+<!-- page -->
+ 
+ 
+
+
+
